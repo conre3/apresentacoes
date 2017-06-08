@@ -14,11 +14,10 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-library(emojifont)
 library(emo)
 ```
 
-background-image: url("/home/jtrecenti/2017-06-08-141217_1920x1080_scrot.png")
+background-image: url("img/titulo.png")
 background-size: cover
 class: center, bottom, inverse
 
@@ -100,7 +99,7 @@ Você precisa de
 (Ou que tenham noção dos riscos)
 
 ---
-background-image: url("/home/jtrecenti/2017-06-08-141003_1920x1080_scrot.png")
+background-image: url("img/jobs.png")
 background-size: cover
 class: center, bottom, inverse
 
@@ -184,8 +183,36 @@ class: inverse
 ## Exemplos
 
 ---
+background-image: url(img/ds.png)
 
-# Faça seu networking
+# Atividades
+
+## Funcionário
+
+
+---
+class: inverse
+
+# Atividades
+
+## Empreendedor
+
+- Interação com cliente
+- Elaboração de propostas
+- Networking
+- Trabalhos administrativos
+- Planejamento
+- Pesquisa de mercado
+- ...
+
+---
+class: middle, center, inverse
+
+# Tips and tricks
+
+---
+
+# 1. Faça seu networking
 
 --
 
@@ -205,7 +232,7 @@ class: inverse
 ---
 class: inverse
 
-# Seja relevante na web
+# 2. Seja relevante na web
 
 --
 
@@ -224,7 +251,7 @@ class: inverse
 
 ---
 
-# Estude, aprenda, atualize-se
+# 3. Estude, aprenda, atualize-se
 
 --
 
@@ -247,7 +274,7 @@ class: inverse
 
 ---
 
-# Aprenda R (e o `tidyverse`)
+# 4. Aprenda R (e o `tidyverse`)
 
 --
 
@@ -275,7 +302,7 @@ class: inverse
 
 ---
 
-# Você não ficará sem emprego
+# 5. Você não ficará sem emprego
 
 
 ---
@@ -302,7 +329,7 @@ class: middle, center, inverse
 ---
 background-image: url(img/lol.png)
 
-# Finja que esses termos são importantes
+# 6. Finja que esses termos são importantes
 
 --
 
@@ -313,32 +340,9 @@ background-image: url(img/lol.png)
 ## Não subestime o poder da comunicação
 
 ---
-background-image: url(img/ds.png)
-
-# Atividades
-
-## Funcionário
-
-
----
-class: inverse
-
-# Atividades
-
-## Empreendedor
-
-- Interação com cliente
-- Elaboração de propostas
-- Networking
-- Trabalhos administrativos
-- Planejamento
-- Pesquisa de mercado
-- ...
-
----
 class: middle
 
-# Aproveite a universidade
+# 7. Aproveite a universidade
 
 --
 
@@ -361,7 +365,7 @@ Dê likes no face, divulgue eventos, ajude as entidades, ...
 ---
 class: inverse
 
-# Apareça na universidade
+# 8. Apareça na universidade
 
 --
 
@@ -380,7 +384,7 @@ Eles não correrão atrás de você `r ji('happy')`
 ---
 class: middle
 
-# É isso!
+# Boa sorte!
 
 ## Apresentação
 

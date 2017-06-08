@@ -1,0 +1,72 @@
+---
+title: "Mesa redonda"
+author: "Julio Trecenti"
+date: "2017-06-08"
+output:
+  xaringan::moon_reader:
+    self_contained: false
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+class: middle, center
+
+# Foco
+
+---
+background-image: url(img/ds.png)
+
+---
+class: inverse
+
+# Modelagem: reorganização
+
+1. Supervisionado: i) inferência ii) predição
+
+--
+
+2. Não supervisionado
+
+--
+
+## R4DS
+
+--
+
+## Introduction to statistical learning
+
+--
+
+## Elements of statistical learning
+
+---
+class: inverse
+
+# Trilhas
+
+--
+
+## Liberdade
+
+--
+
+## Ciclo básico único
+
+- cálculo, álgebra linear, medida, programação, ferramental.
+
+--
+
+## Unir estatística e computação
+
+- 2 a 3 anos de trilhas
+- trilhas definidas pela faculdade
+    - possibilidades: probabilidade, aprendizado estatístico, bayesiana aplicada, fundamentos, ...
+    - pode juntar 
