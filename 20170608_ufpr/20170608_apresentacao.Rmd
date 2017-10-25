@@ -1,11 +1,11 @@
 ---
 title: "Estatística e empreendedorismo"
 author: "Julio Trecenti"
-date: "2017-06-08"
+date: "2017-10-25"
 output:
   xaringan::moon_reader:
-    self_contained: false
-    lib_dir: libs
+    self_contained: true
+    # lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
@@ -126,7 +126,7 @@ class: inverse
 # Consultoria genérica
 
 --
-## Usualmente ligada ao meio acadêmico
+## Usualmente ligada à academia
 
 --
 ## Clientes: acadêmicos, pequenas/grandes empresas
@@ -224,7 +224,7 @@ class: inverse
 
 ---
 
-# Estude, aprenda, atualize-se
+# Estude, aprenda, atualize
 
 --
 
@@ -247,15 +247,11 @@ class: inverse
 
 ---
 
-# Aprenda R (e o `tidyverse`)
+# Aprenda R (e `tidyverse`!)
 
 --
 
-## Uma das linguagens que mais evolui no mundo
-
---
-
-## Curva de aprendizado cada vez mais rápida
+## Curva de aprendizado rápida
 
 --
 
@@ -383,8 +379,6 @@ class: middle
 # É isso!
 
 ## Apresentação
-
-## https://github.com/conre3/apresentacoes
 
 ## Contato
 
