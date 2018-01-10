@@ -11,20 +11,6 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE,
 
 # A. Assuntos gerais
 
-## Integrantes do conselho
-
-- **Presidente**: Julio Trecenti
-- **Vice-Presidente**: Doris Fontes
-- **Tesoureiro**: Marcelo Ventura
-
-### Conselheiros Efetivos
-
-Adriana Silva, Edmar Alvarenga, Ines Nishimoto, Marcos Coque, Mario Tarumoto, Nathalia Demetrio.
-
-### Conselheiros Suplentes
-
-Alessandro Zito, Fernanda Rosa, Marcelo Fernandes, Mauro Alves, Nara Spall, Newton Nogueira, Paula Bonifácio, Paulo Ferreira, Regina Albanese.
-
 ## Contexto
 
 ```{r}
@@ -73,11 +59,6 @@ knitr::include_graphics("img06.png")
 
 ## Plano CONRE-3 de 2018
 
-### Mindset
-
-1. Tratar o conselho como associação sem fins lucrativos.
-1. Criar uma estrutura administrativa que independe dos conselheiros.
-
 ### Direção
 
 1. Facilitar e incentivar a associação de bacharéis e técnicos em estatística.
@@ -102,6 +83,21 @@ knitr::include_graphics("img06.png")
 - Criar equipe de fiscalização.
 
 # B. Comissões
+
+## Integrantes do conselho
+
+- **Presidente**: Julio Trecenti
+- **Vice-Presidente**: Doris Fontes
+- **Tesoureiro**: Marcelo Ventura
+
+### Conselheiros Efetivos
+
+Adriana Silva, Edmar Alvarenga, Ines Nishimoto, Marcos Coque, Mario Tarumoto, Nathalia Demetrio.
+
+### Conselheiros Suplentes
+
+Alessandro Zito, Fernanda Rosa, Marcelo Fernandes, Mauro Alves, Nara Spall, Newton Nogueira, Paula Bonifácio, Paulo Ferreira, Regina Albanese.
+
 
 ## Estrutura
 
@@ -177,6 +173,7 @@ knitr::include_graphics("comissoes.png")
 - Formulário: Julio
 - Reuniões com empresas: Adriana
 - Convênios com faculdades: Nathalia / Julio
+- Carteira técnica para graduandos, se funcionar: ?
 - ...
 
 ## Divisão de tarefas: CONE 2018
@@ -189,10 +186,23 @@ knitr::include_graphics("comissoes.png")
 
 ## Relato reunião com CONFE
 
-- Carteira provisória para graduandos
+- Carteira técnica para graduandos
+    - Bem visto, vamos mandar minuta e discutir $
 - Desconto para recém formados
+    - Bem visto, vamos mandar minuta e discutir $
 - Criação de comissão para melhoria contínua do CNE
+    - Bem visto, precisamos pressionar
 - Registro de docentes e empresas júnior
+    - Não existe consenso no CONFE, precisamos fazer muitos follow-ups
 - Alternativas para multa eleitoral
-- Resolução para permitir baixa temporária
+    - Não deu pra tirar nenhum resultado, mas vamos mandar minuta.
+- Resolução para permitir suspensão temporária
+    - Mal visto, vai ser difícil virar, mas vamos mandar minuta.
 - Forma de comunicação
+    - Skype é muito difícil (!!!)
+    - tentar passar resolução de aprovação tácita
+
+## Outros assuntos
+
+- SINAPE 2018.
+- Agenda de Recepção, colação e semanas.

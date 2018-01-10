@@ -126,7 +126,7 @@ knitr::include_graphics("img06.png")
 
 ## Desconto para recém formados
 
-```{r, fig.width=9, fig.height=4}
+```{r, fig.width=10, fig.height=4}
 library(tidyverse)
 c_tot <- 359.47 + 228.17
 prop_reg <- 0.1
@@ -161,6 +161,50 @@ dados %>%
   labs(x = "1% de desconto vale quantos % de aumento nos registrados?",
        y = "Valor ótimo de desconto")
 ```
+
+```{r, fig.width=9, fig.height=4}
+library(tidyverse)
+c_tot <- 359.47 + 228.17
+prop_reg <- 0.1
+formandos <- 120
+prop_reg_desc <- function(desconto, k) {
+  pmin(1, prop_reg + desconto * k)
+}
+arrecadacao_total <- function(desconto, cenario) {
+  formandos * c_tot * prop_reg_desc(desconto, cenario) * (1 - desconto)
+}
+dados <- list(desconto = seq(0, 1, 0.001), 
+              cenario = c(1, 3, 5, 10)/10) %>%
+  cross_df() %>% 
+  mutate(prop_registrados = prop_reg_desc(desconto, cenario),
+         arrecadacao_total = arrecadacao_total(desconto, cenario)) %>% 
+  mutate(lab = factor(scales::percent(cenario / 100)),
+         lab = fct_reorder(lab, cenario)) %>% 
+  group_by(cenario) %>% 
+  mutate(m = desconto[which.max(arrecadacao_total)])
+
+p <- dados %>% 
+  ggplot(aes(x = desconto, y = arrecadacao_total, colour = lab)) +
+  geom_line() +
+  geom_vline(aes(xintercept = m, colour = lab), linetype = 2, 
+             data = distinct(dados, cenario, m, lab)) +
+  geom_point(aes(x = m, y = arrecadacao_total(m, cenario), colour = lab), 
+             size = 3, data = distinct(dados, cenario, m, lab)) +
+  geom_hline(yintercept = prop_reg * formandos * c_tot) +
+  theme_minimal(16) +
+  scale_x_continuous(labels = scales::percent, breaks = 0:10 / 10) +
+  scale_y_continuous(labels = scales::dollar, breaks = 0:10 * 5000) +
+  geom_text(aes(x = 0.9, y = prop_reg * formandos * c_tot, colour = NULL,
+                label = "Arrecadação atual"), vjust = -.3, data = dados[1,],
+            size = 4) +
+  theme(axis.ticks.x = element_line(colour = "gray10")) +
+  labs(x = "Desconto", 
+       y = "Arrecadação total", 
+       colour = str_wrap("1% desconto vale quantos % de aumento nos registrados?", 16))
+p
+
+```
+
 
 <!-- -------------------------------------------------------------- -->
 
