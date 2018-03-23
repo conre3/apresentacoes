@@ -1,0 +1,382 @@
+---
+title: "Estatística e empreendedorismo"
+author: "Julio Trecenti"
+date: "2018-03-23"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    # lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(emo)
+```
+
+background-image: url("img/titulo.png")
+background-size: cover
+class: center, bottom, inverse
+
+---
+class: middle
+
+# Julio Trecenti
+
+<style type="text/css">
+td {
+  vertical-align: center;
+}
+</style>
+<table style="border:none;border-color:none;">
+<tr>
+<td><img style="border:none;height:60px" src='img/ime.png' /></td>
+<td>Doutorando em Estatística no IME-USP</td>
+</tr>
+<tr>
+<td><img style="border:none;height:50px" src='img/abj.png' /></td>
+<td>Secretário-Geral da Associação Brasileira de Jurimetria</td>
+</tr>
+<tr>
+<td><img style="border:none;height:50px" src='img/conre3.jpg' /></td>
+<td>Presidente do CONRE-3</td>
+</tr>
+<tr>
+<td><img style="border:none;height:50px" src='img/platipus.png' /></td>
+<td>Sócio da Platipus Consultoria</td>
+</tr>
+<tr>
+<td><img style="border:none;height:50px" src='img/curso-r.png' /></td>
+<td>Sócio da Curso-R</td>
+</tr>
+</table>
+
+
+---
+class: inverse, middle
+
+# Definição 
+
+> Empreender é ter **autonomia** para usar as melhores competências para criar algo **diferente** e com **valor**, com comprometimento, pela **dedicação** de tempo e esforço necessários, assumindo os **riscos** financeiros, físicos e sociais.
+> 
+> Marcos Hashimoto
+
+---
+background-image: url(img/empreender2.png)
+background-size: cover
+class: center, bottom, inverse
+
+---
+class: inverse
+
+# Passo zero
+
+Você está preparada para...
+
+## `r ji('heart')` Fazer de suas vidas profissional e pessoal uma só?
+
+## `r ji('watch')` Trabalhar em períodos nada usuais?
+
+## `r ji('confused')` Lidar bem com **frustrações**?
+
+## `r ji('scream')` Tomar decisões importantes?
+
+---
+class: inverse
+
+# Empreendedorismo afeta suas relações!
+
+Você precisa de
+
+## Amigos e familiares que te apoiam
+
+## Pessoas que não dependam diretamente de você
+
+(Ou que tenham noção dos riscos)
+
+---
+background-image: url("img/jobs.png")
+background-size: cover
+class: center, bottom, inverse
+
+---
+
+# Mais opções
+
+--
+
+## Consultoria genérica
+
+--
+
+## Consultoria especializada
+
+--
+
+## Startup
+
+---
+class: inverse
+
+# Consultoria genérica
+
+--
+## Clientes: acadêmicos, pequenas/grandes empresas
+
+--
+## Demanda frequente
+
+--
+## Remuneração estável (?)
+
+--
+## Exemplo: Curso-R
+
+---
+class: inverse
+
+# Consultoria especializada
+
+--
+## Foco em uma ou mais áreas (risco de fraude, jurimetria, marketing, ...)
+
+--
+## Foco em grandes empresas
+
+--
+## Diferenciais de mercado
+
+--
+## Alto risco
+
+--
+## Exemplo: Platipus
+
+---
+class: inverse
+
+# Startup / ___tech
+
+--
+## Produto ou serviço com escala
+
+--
+## Alto risco
+
+--
+## Equipes interdisciplinares
+
+--
+## Estude: MVP, incubadora, aceleradora, canvas, investidor anjo, venture capital, ...
+
+--
+## Exemplos
+
+---
+background-image: url(img/ds.png)
+
+# Atividades
+
+## Funcionário
+
+---
+class: inverse
+
+# Atividades
+
+## Empreendedor
+
+- Interação com cliente
+- Elaboração de propostas
+- Networking
+- Trabalhos administrativos
+- Planejamento
+- Pesquisa de mercado
+- ...
+
+---
+class: middle, center, inverse
+
+# Tips and tricks
+
+---
+
+# 1. Faça seu networking
+
+--
+
+## Entre nos grupos
+
+- Facebook: Big Data Brasil, R Brasil - Programadores, Estatística Brasil, ...
+- Telegram: [t.me/rbrasil](t.me/rbrasil), [t.me/datasciencepython](t.me/datasciencepython), ...
+
+--
+
+## Participe dos eventos
+
+- meetups
+- hackathons
+- conferências
+
+---
+class: inverse
+
+# 2. Seja relevante na web
+
+--
+
+## Faça um blog nerd
+
+- Pacote [`blogdown`](https://bookdown.org/yihui/blogdown/)
+- MANTENHA ATUALIZADO
+- Exemplos: http://curso-r.com, http://abj.org.br
+
+--
+
+## Responda perguntas
+
+- Facebook, Telegram
+- Fóruns (Stackoverflow, Cross Validated, ...)
+
+---
+
+# 3. Estude, aprenda, atualize-se
+
+--
+
+## A estatística evolui com o mundo
+
+--
+
+## **O seu curso já está desatualizado!**
+
+--
+
+## Existem cursos online de altíssima qualidade
+
+- Coursera, edX, Udacity, Stanford, Curso-R
+
+
+---
+
+# 4. Aprenda R (e o `tidyverse`)
+
+--
+
+## Curva de aprendizado rápida
+
+--
+
+## Aumenta produtividade
+
+--
+
+## Diferencial no mercado
+
+--
+
+## Você se dará bem na faculdade
+
+--
+
+- Você também pode estudar python, scala etc.
+
+---
+
+# 5. Você não ficará sem emprego
+
+---
+class: middle, center, inverse
+
+# **Você não ficará sem emprego**
+
+--
+
+## Não tenha medo de ousar
+
+--
+
+## O medo não é conselheiro de ninguém
+
+--
+
+## Não aceite esmola
+
+--
+
+## Todo mundo precisa de você
+
+---
+background-image: url(img/lol.png)
+
+# 6. Finja que esses termos são importantes
+
+--
+
+## BigData, Data Science, NoSQL, Hadoop, Deep Learning, Analytics, ...
+
+--
+
+## Não subestime o poder da comunicação
+
+---
+class: middle
+
+# 7. Aproveite a universidade
+
+--
+
+## Faça parte das entidades
+
+Centro acadêmico, empresa júnior, atlética, ...
+
+--
+
+## Ajude a comunidade
+
+Festas, eventos, palestras
+
+--
+
+## Divulgue nossa profissão
+
+Dê likes no face, divulgue eventos, ajude as entidades, entre nos CONREs
+
+---
+class: inverse
+
+# 8. Apareça na universidade
+
+--
+
+## Converse com os professores
+
+Eles não correrão atrás de você!
+
+--
+
+## O mercado está de olho na universidade
+
+--
+
+## Não perca seus amigos
+
+---
+class: middle
+
+# Boa sorte!
+
+## Apresentação
+
+https://github.com/conre3/apresentacoes
+
+## Contato
+
+- CONRE: jtrecenti@conre3.org.br
+- ABJ: jtrecenti@abj.org.br
+- Platipus: jtrecenti@platipus.com.br
+- Curso-R: jtrecenti@jtrecenti.com
+
