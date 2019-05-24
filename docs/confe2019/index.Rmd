@@ -1,0 +1,181 @@
+---
+title: "Novos registros"
+date: "Rio de Janeiro, 2019-05-24"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE,
+                      out.width = "90%", fig.align = "center")
+```
+
+class: class: center, middle
+
+<style type="text/css">
+.remark-slide-content {
+    font-size: 25px;
+    padding: 1em 4em 1em 4em;
+}
+</style>
+
+---
+class: middle, center
+
+# Alguns números
+
+```{r warning=FALSE, message=FALSE, fig.width=10, fig.height=6}
+library(tidyverse)
+confe <- tibble::tribble(
+  ~ano,   ~n,
+  2004,  86L,
+  2005,  90L,
+  2006,  78L,
+  2007,  91L,
+  2008, 101L,
+  2009,  79L,
+  2010, 106L,
+  2011,  73L,
+  2012,  83L,
+  2013,  74L,
+  2014,  47L,
+  2015, 112L,
+  2016, 175L,
+  2017, 153L
+) %>%
+  mutate(pais = "confe")
+
+bd <- tibble::tribble(
+  ~ano, ~brasil, ~eua,
+   2004,     407,  544,
+   2005,     456,  603,
+   2006,     474,  606,
+   2007,     469,  610,
+   2008,     440,  715,
+   2009,     404,  747,
+   2010,     471,  849,
+   2011,     459, 1078,
+   2012,     425, 1345,
+   2013,     448, 1656,
+   2014,     386, 1937,
+   2015,     453, 2305,
+   2016,     364, 2758,
+   2017,     467, 3362
+  ) %>%
+  gather(pais, n, brasil, eua) %>%
+  bind_rows(confe)
+
+bd %>%
+  ggplot(aes(x = ano, y = n, colour = pais)) +
+  geom_line(size = 2) +
+  geom_point(size = 3) +
+  scale_colour_viridis_d(begin = 0.4, end = 0.8) +
+  scale_y_continuous(breaks = 500 * 0:10) +
+  theme_minimal(16) +
+  labs(colour = "País",
+       x = "Ano", y = "Formandos",
+       title = "Quantidade de formandos em estatística e registros",
+       caption = "Fonte: INEP, ASA e CNE/CONFE") +
+  theme(legend.position = "bottom")
+```
+
+---
+
+# Alguns números
+
+```{r, fig.width=10, fig.height=6}
+bd %>%
+  filter(pais != "eua") %>%
+  spread(pais, n) %>%
+  mutate(razao = confe/brasil) %>%
+  ggplot(aes(x = ano, y = razao)) +
+  geom_line() +
+  geom_point() +
+  theme_minimal(16) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 50/100)) +
+  ggtitle("Razão entre formandos e registros")
+```
+
+---
+
+# Inadimplência
+
+- A inadimplência afeta menos de 2000 pessoas.
+- Potencial de novos registros de mais de 3000 pessoas.
+
+---
+
+# Conclusão
+
+- A demanda por estatísticos está aumentando no mundo
+    - Isso está vindo com o nome de Cientistas de dados
+
+--
+
+- Não basta cobrar os inadimplentes; temos de aumentar a taxa de conversão
+
+--
+
+- Como?
+
+---
+class: middle, inverse
+
+# Alternativas
+
+---
+
+# Alternativas
+
+## Comunicação
+
+--
+
+## Apropriação
+
+---
+
+# Comunicação
+
+
+## Princípios
+
+- Não basta usar a lei
+- Mostrar que entrar no sistema CONFE/CONRE traz vantagens
+
+--
+
+## Atividades
+
+- Participação em eventos das universidades
+- Organização de eventos próprios
+
+---
+
+# Apropriação
+
+- Elaborar resolução informando que bachareis em ciência de dados devem se registrar no sistema CONFE/CONRE.
+- Registro de cursos de pós, começando por estatística e depois indo para ciência de dados / big data.
+
+---
+
+# Contato
+
+- CONRE-3: [jtrecenti@conre3.org.br](mailto:jtrecenti@conre3.org.br)
+- Curso-R: [jtrecenti@curso-r.com](mailto:jtrecenti@curso-r.com)
+- ABJ: [jtrecenti@abj.org.br](mailto:jtrecenti@abj.org.br)
+- Terranova: [jtrecenti@trnv.com.br](mailto:jtrecenti@trnv.com.br)
+
+## Páginas: 
+
+- https://curso-r.com
+- https://abj.org.br
+- https://github.com/jtrecenti
+
+Apresentação: https://conre3.github.com/apresentacoes/confe2019/
