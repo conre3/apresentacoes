@@ -104,13 +104,6 @@ bd %>%
 
 ---
 
-# Inadimplência
-
-- A inadimplência afeta menos de 2000 pessoas.
-- Potencial de novos registros de mais de 3000 pessoas.
-
----
-
 # Conclusão
 
 - A demanda por estatísticos está aumentando no mundo
