@@ -1,0 +1,105 @@
+---
+title: "Fiscalização"
+date: "Rio de Janeiro, 2019-05-25"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE,
+                      out.width = "90%", fig.align = "center")
+```
+
+<style type="text/css">
+.remark-slide-content {
+    font-size: 25px;
+    padding: 1em 4em 1em 4em;
+}
+</style>
+
+# Pesquisa de mercado
+
+### Base de dados da RFB, disponibilizada em out/2018
+
+--
+
+### Endereço, capital social, cnpj, email, telefone
+
+--
+
+### 2.800 empresas ativas com CNAE 73.203/00
+
+---
+
+# Resultados por CONRE
+
+|conre  | Total| Cap>500 mil| Cap>500 mil e sede|
+|:------|-----:|-----------:|------------------:|
+|CONRE1 |   193|         123|                 26|
+|CONRE2 |   288|         139|                 75|
+|CONRE3 |  1400|         625|                337|
+|CONRE4 |   245|         112|                 36|
+|CONRE5 |   285|         169|                 23|
+|CONRE6 |   231|         123|                 67|
+|CONRE7 |   158|          99|                  0|
+
+---
+
+# Ganhos
+
+Considerando apenas as empresas com capital maior de 500 mil e com sede na capital
+
+|Proporção |Valor     |Valor CONFE |
+|:---------|:---------|:-----------|
+|0.0%      |R$0       |R$0      |
+|5.0%      |R$97.790  |R$19.558 |
+|10.0%     |R$195.580 |R$39.116 |
+|15.0%     |R$293.370 |R$58.674 |
+|20.0%     |R$391.160 |R$78.232 |
+|25.0%     |R$488.950 |R$97.790 |
+
+---
+
+# Fluxo sugerido
+
+- Iniciar pelas empresas de grande porte no município da sede do CONRE
+
+--
+
+- Notificar por carta / email / telefone
+
+--
+
+- Oferecer registro sem multas/taxas por 3 meses
+    - eventualmente, até um desconto
+
+--
+
+- Aprender com a experiência e expandir
+
+---
+class: middle, center
+
+# Base de dados
+
+# [http://bit.ly/rfb-pm](http://bit.ly/rfb-pm)
+
+---
+
+# Contato
+
+- CONRE-3: [jtrecenti@conre3.org.br](mailto:jtrecenti@conre3.org.br)
+
+## Páginas: 
+
+- https://curso-r.com
+- https://abj.org.br
+- https://github.com/jtrecenti
+
+Apresentação: https://conre3.github.com/apresentacoes/confe2019-2/
